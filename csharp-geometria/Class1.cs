@@ -38,7 +38,7 @@
             calcolaArea(this.baseRettangolo, this.altezzaRettangolo);
             Console.WriteLine(this.perimetro);
             Console.WriteLine(this.area);
-            Console.WriteLine("---------------------------------------------------");
+            Console.WriteLine("------------------------------------");
         }
 
 

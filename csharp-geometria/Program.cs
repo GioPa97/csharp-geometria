@@ -16,7 +16,8 @@ using csharp_geometria;
 Rettangolo nuovoRettangolo = new Rettangolo();
 
 Console.WriteLine("Inserisci un nome per il rettangolo:");
-string nomeUtente = nuovoRettangolo.nomeRettangolo = Console.ReadLine();
+nuovoRettangolo.nomeRettangolo = Console.ReadLine();
+
 
 Console.WriteLine("Inserisci un numero per la base del rettangolo:");
 int baseUtente = nuovoRettangolo.baseRettangolo = int.Parse(Console.ReadLine());
@@ -26,14 +27,10 @@ Console.WriteLine("Inserisci un numero per l'altezza del rettangolo:");
 int altezzaUtente = nuovoRettangolo.altezzaRettangolo = int.Parse(Console.ReadLine());
 
 
-int perimetroNuovoRettangolo=nuovoRettangolo.calcolaPerimetro(baseUtente,altezzaUtente);
-int areaNuovoRettangolo=nuovoRettangolo.calcolaArea(baseUtente, altezzaUtente);
+nuovoRettangolo.perimetro = nuovoRettangolo.calcolaPerimetro(baseUtente, altezzaUtente);
+nuovoRettangolo.area = nuovoRettangolo.calcolaArea(baseUtente, altezzaUtente);
 
-Console.WriteLine("Il perimetro del rettangolo è:");
-Console.WriteLine(perimetroNuovoRettangolo);
 
-Console.WriteLine("l'area del rettangolo è:");
-Console.WriteLine(areaNuovoRettangolo);
 
 nuovoRettangolo.stampaRettangolo();
 
