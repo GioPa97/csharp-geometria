@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace csharp_geometria
+﻿namespace csharp_geometria
 {
     public class Rettangolo
     {
@@ -12,7 +6,7 @@ namespace csharp_geometria
 
         public int baseRettangolo = 20;
         public int altezzaRettangolo = 10;
-
+        public string nomeRettangolo;
 
 
 
@@ -22,25 +16,25 @@ namespace csharp_geometria
         public int calcolaArea(int baseRettangolo, int altezzaRettangolo)
         {
             int area = baseRettangolo * altezzaRettangolo;
-                return area;
+            return area;
 
         }
 
-        public int calcolcaPerimetro(int baseRettangolo, int altezzaRettangolo)
+        public int calcolaPerimetro(int baseRettangolo, int altezzaRettangolo)
         {
             int perimetro = (baseRettangolo + altezzaRettangolo) * 2;
             return perimetro;
         }
 
-
-
-        public void StampaRettangolo()
+        public void stampaRettangolo()
         {
-            Console.WriteLine("Base: \t" + baseRettangolo);
-            Console.WriteLine("Altezza: \t" + altezzaRettangolo);
-
-
+            Console.WriteLine($"---Informazioni Rettangolo {this.nomeRettangolo}---");
+            Console.WriteLine($"Altezza: {this.altezzaRettangolo}");
+            Console.WriteLine($"Base: {this.baseRettangolo}");
         }
+
+
+
 
 
     }
