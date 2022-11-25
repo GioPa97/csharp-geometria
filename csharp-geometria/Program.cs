@@ -10,3 +10,31 @@ Perimetro: 60 cm
 Area: 200 cm2
 BONUS: Aggiungere alla classe Rettangolo un metodo “disegna” che disegna in console il rettangolo con le sue dimensioni, ossia tanti “—” (due trattini) orizzontali quanto è grande la sua base e tanti ‘|’ verticali quanto e grande la sua altezza.
 */
+
+using csharp_geometria;
+
+Rettangolo nuovoRettangolo = new Rettangolo();
+
+
+Console.WriteLine("Inserisci un numero per la base del rettangolo:");
+int baseUtente = nuovoRettangolo.baseRettangolo = int.Parse(Console.ReadLine());
+
+
+Console.WriteLine("Inserisci un numero per l'altezza del rettangolo:");
+int altezzaUtente = nuovoRettangolo.altezzaRettangolo = int.Parse(Console.ReadLine());
+
+
+int perimetroNuovoRettangolo=nuovoRettangolo.calcolcaPerimetro(baseUtente,altezzaUtente);
+int areaNuovoRettangolo=nuovoRettangolo.calcolaArea(baseUtente, altezzaUtente);
+
+Console.WriteLine("Il perimetro del rettangolo è:");
+Console.WriteLine(perimetroNuovoRettangolo);
+
+Console.WriteLine("l'area del rettangolo è:");
+Console.WriteLine(areaNuovoRettangolo);
+
+
+
+
+
+

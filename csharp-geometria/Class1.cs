@@ -10,8 +10,8 @@ namespace csharp_geometria
     {
         // CARATTERISTICHE / PROPRIETA' che voglio tracciare (di un rettangolo
 
-        public int baseRettangolo;
-        public int altezzaRettangolo;
+        public int baseRettangolo = 20;
+        public int altezzaRettangolo = 10;
 
 
 
@@ -19,7 +19,7 @@ namespace csharp_geometria
         // METODI con cui potrò interagire dal programma principale 
         // Posso creare dei metodi per questa classe con i quali il mio programma principale
 
-        public int calcolaAreaint(int baseRettangolo, int altezzaRettangolo)
+        public int calcolaArea(int baseRettangolo, int altezzaRettangolo)
         {
             int area = baseRettangolo * altezzaRettangolo;
                 return area;
