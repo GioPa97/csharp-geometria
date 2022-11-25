@@ -14,26 +14,36 @@ BONUS: Aggiungere alla classe Rettangolo un metodo “disegna” che disegna in 
 using csharp_geometria;
 
 Rettangolo nuovoRettangolo = new Rettangolo();
-
 Console.WriteLine("Inserisci un nome per il rettangolo:");
 nuovoRettangolo.nomeRettangolo = Console.ReadLine();
-
-
 Console.WriteLine("Inserisci un numero per la base del rettangolo:");
 int baseUtente = nuovoRettangolo.baseRettangolo = int.Parse(Console.ReadLine());
-
-
 Console.WriteLine("Inserisci un numero per l'altezza del rettangolo:");
 int altezzaUtente = nuovoRettangolo.altezzaRettangolo = int.Parse(Console.ReadLine());
-
-
 nuovoRettangolo.perimetro = nuovoRettangolo.calcolaPerimetro(baseUtente, altezzaUtente);
 nuovoRettangolo.area = nuovoRettangolo.calcolaArea(baseUtente, altezzaUtente);
-
-
-
 nuovoRettangolo.stampaRettangolo();
 
+//-----------------------------------------------------------------------------------------------
+
+
+Rettangolo nuovoRettangoloUno = new Rettangolo();
+nuovoRettangoloUno.nomeRettangolo = "Anselmo";
+nuovoRettangoloUno.baseRettangolo = 3;
+nuovoRettangoloUno.altezzaRettangolo = 8;
+nuovoRettangoloUno.perimetro = nuovoRettangoloUno.calcolaPerimetro(baseUtente, altezzaUtente);
+nuovoRettangoloUno.area = nuovoRettangoloUno.calcolaArea(baseUtente, altezzaUtente);
+nuovoRettangoloUno.stampaRettangolo();
+
+//-----------------------------------------------------------------------------------------------
+
+Rettangolo nuovoRettangoloDue = new Rettangolo();
+nuovoRettangoloDue.nomeRettangolo = "Brigitta";
+nuovoRettangoloDue.baseRettangolo = 4;
+nuovoRettangoloDue.altezzaRettangolo = 11;
+nuovoRettangoloDue.perimetro = nuovoRettangoloDue.calcolaPerimetro(baseUtente, altezzaUtente);
+nuovoRettangoloDue.area = nuovoRettangoloDue.calcolaArea(baseUtente, altezzaUtente);
+nuovoRettangoloDue.stampaRettangolo();
 
 
 
