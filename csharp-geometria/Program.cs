@@ -31,8 +31,8 @@ Rettangolo nuovoRettangoloUno = new Rettangolo();
 nuovoRettangoloUno.nomeRettangolo = "Anselmo";
 nuovoRettangoloUno.baseRettangolo = 3;
 nuovoRettangoloUno.altezzaRettangolo = 8;
-nuovoRettangoloUno.perimetro = nuovoRettangoloUno.calcolaPerimetro(baseUtente, altezzaUtente);
-nuovoRettangoloUno.area = nuovoRettangoloUno.calcolaArea(baseUtente, altezzaUtente);
+nuovoRettangoloUno.perimetro = nuovoRettangoloUno.calcolaPerimetro(nuovoRettangoloUno.baseRettangolo, nuovoRettangoloUno.altezzaRettangolo);
+nuovoRettangoloUno.area = nuovoRettangoloUno.calcolaArea(nuovoRettangoloUno.baseRettangolo, nuovoRettangoloUno.altezzaRettangolo);
 nuovoRettangoloUno.stampaRettangolo();
 
 //-----------------------------------------------------------------------------------------------
@@ -41,8 +41,8 @@ Rettangolo nuovoRettangoloDue = new Rettangolo();
 nuovoRettangoloDue.nomeRettangolo = "Brigitta";
 nuovoRettangoloDue.baseRettangolo = 4;
 nuovoRettangoloDue.altezzaRettangolo = 11;
-nuovoRettangoloDue.perimetro = nuovoRettangoloDue.calcolaPerimetro(baseUtente, altezzaUtente);
-nuovoRettangoloDue.area = nuovoRettangoloDue.calcolaArea(baseUtente, altezzaUtente);
+nuovoRettangoloDue.perimetro = nuovoRettangoloDue.calcolaPerimetro(nuovoRettangoloDue.baseRettangolo, nuovoRettangoloDue.altezzaRettangolo);
+nuovoRettangoloDue.area = nuovoRettangoloDue.calcolaArea(nuovoRettangoloDue.baseRettangolo, nuovoRettangoloDue.altezzaRettangolo);
 nuovoRettangoloDue.stampaRettangolo();
 
 
