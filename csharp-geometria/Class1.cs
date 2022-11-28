@@ -9,6 +9,28 @@
         public string nomeRettangolo;
         public int perimetro;
         public int area;
+        public string colore = "bianco";
+
+
+        //costruttore rettangolo
+        public Rettangolo()
+        {
+           
+        }
+        public Rettangolo(string nomeRettangolo, int baseRettangolo, int altezzaRettangolo)
+        {
+            this.nomeRettangolo = nomeRettangolo;
+            this.baseRettangolo = baseRettangolo;
+            this.altezzaRettangolo = altezzaRettangolo;
+        }
+
+        public Rettangolo(string colore, string nomeRettangolo, int baseRettangolo, int altezzaRettangolo)
+        {
+            this.colore = colore;
+            this.nomeRettangolo = nomeRettangolo;
+            this.baseRettangolo = baseRettangolo;
+            this.altezzaRettangolo = altezzaRettangolo;
+        }
 
 
 
@@ -19,6 +41,13 @@
         {
             int area = baseRettangolo * altezzaRettangolo;
             return area;
+
+        }
+
+        public void cambiacolore(string colore)
+        {
+            this.colore = colore;
+        
 
         }
 
@@ -34,8 +63,7 @@
             Console.WriteLine($"---Informazioni Rettangolo {this.nomeRettangolo}---");
             Console.WriteLine($"Altezza: {this.altezzaRettangolo}");
             Console.WriteLine($"Base: {this.baseRettangolo}");
-            calcolaPerimetro(this.baseRettangolo, this.altezzaRettangolo);
-            calcolaArea(this.baseRettangolo, this.altezzaRettangolo);
+            Console.WriteLine(this.colore);
             Console.WriteLine(this.perimetro);
             Console.WriteLine(this.area);
             Console.WriteLine("------------------------------------");

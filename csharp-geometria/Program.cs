@@ -44,6 +44,17 @@ nuovoRettangoloDue.altezzaRettangolo = 11;
 nuovoRettangoloDue.perimetro = nuovoRettangoloDue.calcolaPerimetro(nuovoRettangoloDue.baseRettangolo, nuovoRettangoloDue.altezzaRettangolo);
 nuovoRettangoloDue.area = nuovoRettangoloDue.calcolaArea(nuovoRettangoloDue.baseRettangolo, nuovoRettangoloDue.altezzaRettangolo);
 nuovoRettangoloDue.stampaRettangolo();
+//-----------------------------------------------------------------------------------------------
 
+Rettangolo nuovoRettangoloTre = new Rettangolo("PIPPO", 3, 5);
 
+nuovoRettangoloTre.stampaRettangolo();
 
+//-----------------------------------------------------------------------------------------------
+
+Rettangolo nuovoRettangoloQuattro = new Rettangolo("Verde","Michele", 2, 8);
+
+nuovoRettangoloQuattro.stampaRettangolo();
+nuovoRettangoloQuattro.cambiacolore("giallo");
+
+nuovoRettangoloQuattro.stampaRettangolo();
